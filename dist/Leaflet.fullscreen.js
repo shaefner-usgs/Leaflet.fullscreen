@@ -94,8 +94,10 @@ L.Map.include({
         var container = this.getContainer();
         if (fullscreen) {
             L.DomUtil.addClass(container, 'leaflet-fullscreen-on');
+            L.DomUtil.addClass(document.body, 'leaflet-fullscreen-on');
         } else {
             L.DomUtil.removeClass(container, 'leaflet-fullscreen-on');
+            L.DomUtil.removeClass(document.body, 'leaflet-fullscreen-on');
         }
     },
 
